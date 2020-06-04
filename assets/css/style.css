@@ -9918,6 +9918,10 @@ img.react-parallax-bgimage {
   }
 }
 
+@media (max-width: 991px){
+    li.quitar {display: none !important;}
+    }
+}
 @media only screen and (max-width: 767px) {
   .header-area .header-wrapper .mainmenunav ul.mainmenu li {
     margin: 0;
@@ -10285,6 +10289,11 @@ Mainmenu Area
 .mainmenunav ul.mainmenu > li:hover > a {
   color: #778494;
 }
+
+.mainmenunav ul.mainmenu > li > a.on {
+  color: #778494;
+}
+
 
 .mainmenunav ul.mainmenu > li:first-child {
   margin-left: 0;
@@ -10976,9 +10985,9 @@ ul.social-share li:hover a {
   color: #ffffff;
   -webkit-box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
-  -webkit-transform: translateY(-3px);
-      -ms-transform: translateY(-3px);
-          transform: translateY(-3px);
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 ul.social-share.color-theme li a {
@@ -11226,10 +11235,16 @@ Footer Styles
 .footer-default .footer-right .footer-widget ul.ft-link li:hover a {
   color: #fff;
 }
+.foo
+ter-default .footer-right .footer-widget ul.ft-link li:hover p {
+  color: #123456;
+}
+
 
 .footer-default .footer-right .footer-widget ul.ft-link li + li {
   margin-top: 13px;
 }
+
 
 @media only screen and (max-width: 767px) {
   .footer-default .footer-right .footer-widget ul.ft-link li + li {
@@ -14626,10 +14641,10 @@ ul.brand-style-2 img:hover {
 }
 
 .team .thumbnail::after {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fc004d), to(#000000));
-  background: -webkit-linear-gradient(top, #fc004d 0, #000000 100%);
-  background: -o-linear-gradient(top, #fc004d 0, #000000 100%);
-  background: linear-gradient(to bottom, #fc004d 0, #000000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0e4163), to(#000000));
+  background: -webkit-linear-gradient(top, #0e4163 0, #000000 100%);
+  background: -o-linear-gradient(top, #0e4163 0, #000000 100%);
+  background: linear-gradient(to bottom, #0e4163 0, #000000 100%);
   position: absolute;
   left: 0;
   right: 0;
@@ -17692,4 +17707,86 @@ a.purchase-btn:hover {
 
 .youtube-color {
   color: #ff0000 !important;
+}
+
+a.disabled {pointer-events: none; cursor: not-allowed; color: none; text-decoration: none;}
+
+.color-gray {
+  color: #c6c9d8 !important;
+}
+
+.color-white {
+  color: #fff !important;
+}
+
+a.on, a.on:active, a.on:focus { color: #fff; text-decoration: none;
+}
+
+.quote {
+  text-align: right;
+  font-size: 35px;
+  font-weight: 700;
+  font-style: italic;
+  color: #fff;
+}
+.quote2 {
+  text-align: right;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  color: #fff;
+}
+
+.team .content h4.quote {
+  color: #ffffff;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition-delay: 0.25s;
+       -o-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: all 0.45s cubic-bezier(0.23, 0.88, 0.34, 0.99);
+  -o-transition: all 0.45s cubic-bezier(0.23, 0.88, 0.34, 0.99);
+  transition: all 0.45s cubic-bezier(0.23, 0.88, 0.34, 0.99);
+}
+
+.team:hover .content h4.quote {
+  -webkit-transition-delay: 1s;
+       -o-transition-delay: 1s;
+          transition-delay: 1s;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.team .content h4.quote2 {
+  color: #ffffff;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition-delay: 0.25s;
+       -o-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: all 0.45s cubic-bezier(0.23, 0.88, 0.34, 0.99);
+  -o-transition: all 0.45s cubic-bezier(0.23, 0.88, 0.34, 0.99);
+  transition: all 0.45s cubic-bezier(0.23, 0.88, 0.34, 0.99);
+}
+
+.team:hover .content h4.quote2 {
+  -webkit-transition-delay: 2s;
+       -o-transition-delay: 2s;
+          transition-delay: 2s;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
