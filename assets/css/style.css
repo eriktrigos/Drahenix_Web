@@ -9857,27 +9857,17 @@ img.react-parallax-bgimage {
 }
 
 .header-area.header--sticky.sticky .humberger-menu span.text-white {
-  color: #1f1f25 !important;
+  color: #0e4163 !important;
 }
 
 /*----------------------------
     Mobile Menu Style Css 
 ------------------------------*/
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .header-area .header-wrapper .mainmenunav {
-    position: absolute;
-  }
-}
 
-@media only screen and (max-width: 767px) {
-  .header-area .header-wrapper .mainmenunav {
-    position: absolute;
-  }
-}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-area .header-wrapper .mainmenunav ul.mainmenu {
-    width: 60vw;
+    width: 30vw;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -9895,7 +9885,7 @@ img.react-parallax-bgimage {
 
 @media only screen and (max-width: 767px) {
   .header-area .header-wrapper .mainmenunav ul.mainmenu {
-    width: 60vw;
+    width: 30vw;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -9950,7 +9940,7 @@ img.react-parallax-bgimage {
     height: 0;
     border-style: solid;
     border-width: 7px 7px 0 7px;
-    border-color: #1f1f25 transparent transparent transparent;
+    border-color: #0e4163 transparent transparent transparent;
     position: absolute;
     content: "";
     right: 0;
@@ -9963,14 +9953,14 @@ img.react-parallax-bgimage {
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
   .header-area .header-wrapper .mainmenunav ul.mainmenu li.has-droupdown > a.open {
-    color: #f9004d;
+    color: #778494;
   }
   .header-area .header-wrapper .mainmenunav ul.mainmenu li.has-droupdown > a.open::after {
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 0 7px 7px 7px;
-    border-color: transparent transparent #f9004d transparent;
+    border-color: transparent transparent #778494 transparent;
   }
 }
 
@@ -9983,7 +9973,7 @@ img.react-parallax-bgimage {
     height: 0;
     border-style: solid;
     border-width: 7px 7px 0 7px;
-    border-color: #1f1f25 transparent transparent transparent;
+    border-color: #0e4163 transparent transparent transparent;
     position: absolute;
     content: "";
     right: 0;
@@ -9996,14 +9986,14 @@ img.react-parallax-bgimage {
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
   .header-area .header-wrapper .mainmenunav ul.mainmenu li.has-droupdown > a.open {
-    color: #f9004d;
+    color: #778494;
   }
   .header-area .header-wrapper .mainmenunav ul.mainmenu li.has-droupdown > a.open::after {
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 0 7px 7px 7px;
-    border-color: transparent transparent #f9004d transparent;
+    border-color: transparent transparent #778494 transparent;
   }
 }
 
@@ -10097,13 +10087,24 @@ img.react-parallax-bgimage {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-area .header-wrapper .mainmenunav ul.mainmenu li a {
-    color: #1f1f25;
+    color: #0e4163;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-area .header-wrapper .mainmenunav ul.mainmenu li a.on {
+    color: #778494;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .header-area .header-wrapper .mainmenunav ul.mainmenu li a {
-    color: #1f1f25;
+    color: #0e4163;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header-area .header-wrapper .mainmenunav ul.mainmenu li a.on {
+    color: #778494;
   }
 }
 
@@ -10147,8 +10148,7 @@ img.react-parallax-bgimage {
 
 @media only screen and (max-width: 575px) {
   .header-area .header-wrapper.menu-open .mainmenunav ul.mainmenu {
-    width: 86vw;
-    padding: 54px 20px;
+    width: 100vw;
   }
 }
 
@@ -10239,6 +10239,13 @@ Mainmenu Area
 .mainmenunav ul.mainmenu > li {
   margin: 0 15px;
   position: relative;
+}
+
+@media only screen and (max-width: 991px) {
+  .mainmenunav ul.mainmenu > li {
+  margin: 0px;
+  padding: 10px 0px;
+}
 }
 
 .mainmenunav ul.mainmenu > li > a {
@@ -11065,7 +11072,7 @@ Footer Styles
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .footer-default .footer-left {
-    padding: 120px 80px;
+    padding: 70px 80px;
   }
 }
 
@@ -11113,6 +11120,26 @@ Footer Styles
           transform: translateY(-50%);
   width: 295px;
   height: 301px;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-default .footer-left .inner::after {
+   margin-right: 30px;
+}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1650px) {
+  .footer-default .footer-left .inner::after {
+   display: none;
+}
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .footer-default .footer-left .inner::after {
+   display: none;
+}
 }
 
 .footer-default .footer-left .inner > span {
@@ -11180,7 +11207,7 @@ Footer Styles
 
 .footer-default .footer-right {
   background-image: url(../images/bg/bg-image-8.jpg);
-  padding: 50px 70px;
+  padding: 50px 30px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11190,20 +11217,20 @@ Footer Styles
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .footer-default .footer-right {
-    padding: 119px 21px;
+    padding: 50px 30px;
     padding-left: 70px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .footer-default .footer-right {
-    padding: 60px 70px;
+    padding: 60px 30px 10px 70px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .footer-default .footer-right {
-    padding: 60px 30px;
+    padding: 60px 30px 10px 30px;
   }
 }
 
@@ -11266,7 +11293,8 @@ Footer Style Two
 --------------------------*/
 .copyright-text {
   position: absolute;
-  bottom: -114px;
+  text-align: right;
+  bottom: -30px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -11289,6 +11317,17 @@ Footer Style Two
   color: #c6c9d8;
   font-size: 14px;
   opacity: 0.75;
+}
+
+.copyright {
+  position: absolute;
+  right: 0px;
+}
+
+@media only screen and (max-width: 991px) {
+  .copyright {
+    padding-top: 60px;
+  }
 }
 
 /**************************************
@@ -11358,7 +11397,7 @@ Footer Style Two
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .portfolio {
-    min-height: 450px;
+    min-height: 400px;
   }
 }
 
@@ -17789,4 +17828,22 @@ a.on, a.on:active, a.on:focus { color: #fff; text-decoration: none;
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
+}
+
+@media only screen and (max-width: 991px) {
+  .header-area .header-wrapper .mainmenunav ul.mainmenu li.sm-pl--0  {
+    padding-left: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .header-area .header-wrapper .mainmenunav ul.mainmenu li.sm-pt--50  {
+    padding-top: 50px !important;
+  }
+}
+
+.title-left {
+  position: relative;
+  left: 0px;
+  bottom: 0px;
 }
