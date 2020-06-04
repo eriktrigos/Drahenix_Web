@@ -542,7 +542,7 @@ h6,
   font-size: 16px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   h1,
   .h1 {
     font-size: 60px;
@@ -17790,6 +17790,42 @@ a.on, a.on:active, a.on:focus { color: #fff; text-decoration: none;
   -webkit-transition: all 0.45s cubic-bezier(0.23, 0.88, 0.34, 0.99);
   -o-transition: all 0.45s cubic-bezier(0.23, 0.88, 0.34, 0.99);
   transition: all 0.45s cubic-bezier(0.23, 0.88, 0.34, 0.99);
+}
+
+@media only screen and (max-width: 1199px) {
+  .team .content h4.quote {
+  font-size: 25px;
+  }
+  .team .content h4.quote2 {
+  font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .team .content h4.quote {
+  font-size: 30px;
+  }
+  .team .content h4.quote2 {
+  font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .team .content h4.quote {
+  font-size: 35px;
+  }
+  .team .content h4.quote2 {
+  font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .team .content h4.quote {
+  font-size: 25px;
+  }
+  .team .content h4.quote2 {
+  font-size: 14px;
+  }
 }
 
 .team:hover .content h4.quote {
