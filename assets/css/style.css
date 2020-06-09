@@ -4797,13 +4797,13 @@ textarea:-ms-input-placeholder {
 }
 
 .form-message.error {
-  margin-top: 20px;
-  color: #f80707;
+  margin-top: 14px;
+  color: #778797;
 }
 
 .form-message.success {
-  margin-top: 20px;
-  color: #0d8d2d;
+  margin-top: 14px;
+  color: #778797;
 }
 
 .thumb img, .thumbnail img {
@@ -4958,6 +4958,10 @@ img.react-parallax-bgimage {
 
 .mb--0 {
   margin-bottom: 0 !important;
+}
+
+.mb--minus {
+  margin-bottom: -10px !important;
 }
 
 .pt--260 {
@@ -14048,19 +14052,20 @@ Slider Default
     Counterup Area 
 ==========================*/
 .counterup_style--1 {
-  text-align: center;
+  text-align: ;
   margin-top: 40px;
 }
 
 .counterup_style--1 h5.counter {
   font-size: 72px;
+  font-weight: 300;
   line-height: 80px;
   display: inline-block;
   margin-bottom: 17px;
   position: relative;
   display: inline-block;
-  color: #f9004d;
-  margin-left: -13px;
+  color: #0E4163;
+  margin-left: -8px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -14077,14 +14082,15 @@ Slider Default
   position: absolute;
   top: -17px;
   font-size: 40px;
+  font-weight: 400;
   content: "+";
 }
 
 .counterup_style--1 p.description {
   font-size: 18px;
   line-height: 30px;
-  padding: 0 5%;
-  color: rgba(29, 29, 36, 0.75);
+  padding: 0 0%;
+  color: #778797;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -14990,10 +14996,10 @@ ul.nav.tab-style--1 li a {
   display: inline-block;
   padding-bottom: 4px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   cursor: pointer;
   outline: none;
-  color: #1d1d24;
+  color: #778797;
 }
 
 ul.nav.tab-style--1 li a::before {
@@ -15007,7 +15013,7 @@ ul.nav.tab-style--1 li a::before {
 
 ul.nav.tab-style--1 li a.active {
   background: transparent;
-  color: #f9004d;
+  color: #0e4163;
 }
 
 ul.nav.tab-style--1 li a.active::before {
@@ -15023,8 +15029,8 @@ ul.nav.tab-style--1 li a.active::before {
 }
 
 .single-tab-content p {
-  font-weight: 300;
-  color: #717173;
+  font-weight: 400;
+  color: #778797;
   font-size: 18px;
   line-height: 30px;
 }
@@ -15183,7 +15189,7 @@ ul.nav.tab-style--1 li a.active::before {
 }
 
 .list-style--1 li {
-  color: #7e7e7e;
+  color: #778797;
   font-weight: 400;
   font-size: 16px;
   line-height: inherit;
@@ -15267,7 +15273,7 @@ ul.list-style li + li {
   display: block;
   width: 100%;
   padding: 0 20px;
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(119, 135, 151, 0.3);
   border-radius: 5px;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -15276,14 +15282,15 @@ ul.list-style li + li {
   line-height: 46px;
   margin-bottom: 20px;
   outline: none;
-  color: #1f1f25;
-  font-size: 15px;
+  color: #778797 !important;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
   letter-spacing: 0.1px;
 }
 
 .contact-form--1 input:focus,
 .contact-form--1 textarea:focus {
-  border-color: #f9004d;
+  border-color: #778797;
 }
 
 .contact-form--1 textarea {
@@ -15295,7 +15302,7 @@ ul.list-style li + li {
 ============================*/
 .rn-address {
   margin-top: 30px;
-  border: 1px solid #ebebeb;
+  border: 1px solid #778797;
   padding: 40px;
   border-radius: 10px;
   padding-top: 54px;
@@ -15304,10 +15311,10 @@ ul.list-style li + li {
 }
 
 .rn-address .icon {
-  border: 1px solid #ebebeb;
+  border: 1px solid #778797;
   width: 78px;
   height: 78px;
-  color: #f9004d;
+  color: #0e4163;
   line-height: 73px;
   text-align: center;
   border-radius: 100%;
@@ -15326,7 +15333,7 @@ ul.list-style li + li {
 .rn-address .inner p {
   font-size: 18px;
   margin-bottom: 0;
-  color: rgba(29, 29, 36, 0.75);
+  color: #778797;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -15366,7 +15373,7 @@ ul.list-style li + li {
 }
 
 .rn-address .inner p a {
-  color: rgba(29, 29, 36, 0.75);
+  color: #778797;
 }
 
 .rn-address .inner p a:hover {
@@ -15374,8 +15381,8 @@ ul.list-style li + li {
 }
 
 .rn-address:hover .icon {
-  background: #f9004d;
-  border-color: #f9004d;
+  background: #0e4163;
+  border-color: #0e4163;
   color: #fff;
 }
 
@@ -17812,7 +17819,7 @@ a.on, a.on:active, a.on:focus { color: #fff; text-decoration: none;
 
 @media only screen and (max-width: 991px) {
   .team .content h4.quote {
-  font-size: 35px;
+  font-size: 30px;
   }
   .team .content h4.quote2 {
   font-size: 20px;
@@ -17882,4 +17889,20 @@ a.on, a.on:active, a.on:focus { color: #fff; text-decoration: none;
   position: relative;
   left: 0px;
   bottom: 0px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.app-info {
+  font-size: 10px;
+  font-weight: 900;
+  color: #778797;
+  letter-spacing: 2px;
+}
+.grey-color {
+  color: #778797 !important;
+  font-size: 28px;
+  font-weight: 500;
 }
