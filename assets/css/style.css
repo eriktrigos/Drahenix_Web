@@ -17945,3 +17945,49 @@ a.on, a.on:active, a.on:focus { color: #fff; text-decoration: none;
 .project-quote {
   font-weight: 400;
 }
+
+.ribbon-right {
+  position: absolute;
+  right: 120px;
+  top: 210px;
+}
+
+.ribbon  {
+      width: 190px;
+      height: 135px;
+       margin: 0 auto;
+  padding-top: 57px;
+  position: relative; 
+  background: hotpink;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+      background: #7286d7;
+        -webkit-box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 1);
+          box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 1);
+    }
+
+.ribbon:after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  bottom: -55px;
+  width: 0;
+  height: 0;
+  border-top: 55px solid #7286d7;
+  border-left: 190px solid transparent;
+    -webkit-box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 1);
+          box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 1);
+    
+          
+}
+
+.ribbon-right:hover {
+-webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
+          -webkit-transition: all 1s cubic-bezier(0, 0, 0.2, 1);
+  -o-transition: all 1s cubic-bezier(0, 0, 0.2, 1);
+  transition: all 1s cubic-bezier(0, 0, 0.2, 1);
+}
