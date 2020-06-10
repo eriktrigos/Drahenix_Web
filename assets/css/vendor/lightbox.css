@@ -20,9 +20,9 @@
 
 .lg-actions .lg-next,
 .lg-actions .lg-prev {
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 2px;
-    color: #999;
+    color: #fff;
     cursor: pointer;
     display: block;
     font-size: 22px;
@@ -41,7 +41,7 @@
 
 .lg-actions .lg-next:hover,
 .lg-actions .lg-prev:hover {
-    color: #FFF;
+    color: #0e4163;
 }
 
 .lg-actions .lg-next {
@@ -192,11 +192,11 @@
     position: absolute;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.0);
 }
 
 .lg-toolbar .lg-icon {
-    color: #999;
+    color: #fff;
     cursor: pointer;
     float: right;
     font-size: 24px;
@@ -213,7 +213,7 @@
 }
 
 .lg-toolbar .lg-icon:hover {
-    color: #FFF;
+    color: #0e4163;
 }
 
 .lg-toolbar .lg-close:after {
@@ -249,7 +249,7 @@
 }
 
 #lg-counter {
-    color: #999;
+    color: #fff;
     display: inline-block;
     font-size: 16px;
     padding-left: 20px;
@@ -1048,7 +1048,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     right: 0;
     bottom: 0;
     z-index: 1040;
-    background-color: #000;
+    background-color: rgb(0, 0, 0, 0.9);
     opacity: 0;
     -webkit-transition: opacity 0.15s ease 0s;
     -o-transition: opacity 0.15s ease 0s;

@@ -16,10 +16,10 @@ header("Access-Control-Allow-Origin: *");
             exit;
         }
         // Set the recipient email address.
-        $recipient = "nipabali@gmail.com";
+        $recipient = "contact@drahenix.com";
 
         // Set the email subject.
-        $subject = "Test Email for Template Demo - Mail From $name";
+        $subject = "Mail from the website contact - Mail from $name";
  
         // Build the email content.
         $email_content = "Name: $name\n";
