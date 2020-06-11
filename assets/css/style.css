@@ -17967,9 +17967,9 @@ a.on, a.on:active, a.on:focus { color: #fff; text-decoration: none;
   text-transform: uppercase;
   background: #7286d7;
   filter: drop-shadow(0 5px 5px rgba(0,0,0, .2));
-    -webkit-transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
-         -o-transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
-            transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+  -webkit-transition: .1s cubic-bezier(1, 1, 0,0);
+  -o-transition: .1s cubic-bezier(1, 1, 0,0);
+  transition: .1s cubic-bezier(1, 1, 0,0);
 }
 
 .ribbon:after {
