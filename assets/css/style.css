@@ -17948,11 +17948,61 @@ a.on, a.on:active, a.on:focus { color: #fff; text-decoration: none;
   font-weight: 400;
 }
 
+
+
+/*Discord logo*/
+
+
+
 .ribbon-right {
   position: absolute;
   right: 120px;
   top: 210px;
 }
+
+@media only screen and (max-width: 1199px){
+  .ribbon-right{
+    position: absolute;
+    right: 20px;
+    top: 210px;
+  }
+}
+
+@media only screen and (max-width: 1450px){
+  .ribbon-right{
+    position: absolute;
+    right: 0px;
+    top: 210px;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .discord-logo-responsive{
+    display: none;
+  }
+  .discord-text-responsive{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px){
+  .ribbon{
+    display:none;
+  }
+  .discord-logo-responsive{
+    position: relative;
+    font-size: 50px;
+    top: 18px;
+  }
+  .discord-text-responsive{
+    position: relative;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 10px;    
+  }
+}
+
+
 
 .ribbon  {
   width: 190px;
@@ -17988,3 +18038,5 @@ a.on, a.on:active, a.on:focus { color: #fff; text-decoration: none;
   -ms-transform: translateY(10px);
   transform: translateY(10px);
 }
+
+/*End Discord logo*/
