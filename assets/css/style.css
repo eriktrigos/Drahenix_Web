@@ -15386,7 +15386,7 @@ ul.list-style li + li {
 }
 
 .rn-address .inner p a:hover {
-  color: #f9004d;
+  color: #0e4163;
 }
 
 .rn-address:hover .icon {
@@ -17939,9 +17939,9 @@ a.on, a.on:active, a.on:focus { color: #fff; text-decoration: none;
 }
 
 .play-icon:hover {
-  -webkit-transform: scale3d(1.25, 1.25, 1.25);
-  -ms-transform: scale3d(1.25, 1.25, 1.25);
-  transform: scale3d(1.25, 1.25, 1.25);  
+  -webkit-transform: scale3d(1.2, 1.2, 1.2);
+  -ms-transform: scale3d(1.2, 1.2, 1.2);
+  transform: scale3d(1.2, 1.2, 1.2);  
 }
 
 .project-quote {
