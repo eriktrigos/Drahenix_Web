@@ -17968,10 +17968,17 @@ a.on, a.on:active, a.on:focus { color: #fff; text-decoration: none;
   }
 }
 
-@media only screen and (max-width: 1450px){
+@media only screen and (max-width: 1700px){
   .ribbon-right{
     position: absolute;
-    right: 0px;
+    right: 50px;
+    top: 210px;
+  }
+}
+@media only screen and (max-width: 1400px){
+  .ribbon-right{
+    position: absolute;
+    right: 10px;
     top: 210px;
   }
 }
@@ -18002,6 +18009,21 @@ a.on, a.on:active, a.on:focus { color: #fff; text-decoration: none;
   }
 }
 
+@media only screen and (max-width: 411px){
+  .ribbon{
+    display:none;
+  }
+  .discord-logo-responsive{
+    position: relative;
+    font-size: 50px;
+    top: 18px;
+    padding-left: 15px;
+    padding-right: 10px; 
+  }
+  .discord-text-responsive{
+    display:none;   
+  }
+}
 
 
 .ribbon  {
