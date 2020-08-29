@@ -48,9 +48,9 @@
                                      </ul>
                                 </li>
                                 <li><a class="" href="contact.html">CONTACT</a></li>
-                                <li class="pl--100 sm-pl--0 sm-pt--50"><a class="on" href="plusreal.html">EN</a></li>
+                                <li class="pl--100 sm-pl--0 sm-pt--50"><a class="on" href="plusreal.php">EN</a></li>
                                 <li class="mr--0 ml--0 quitar"><a class="disabled color-white">|</a></li>
-                                <li><a class="" href="plusreal_es.html">ES</a></li>
+                                <li><a class="" href="plusreal_es.php">ES</a></li>
                             </ul>
                         </nav>
                         <!-- End Mainmanu Nav -->
@@ -102,30 +102,64 @@
                         	</a>
                     	</div>
                         <div class="row row--35 align-items-center">
-
                             <div class="col-lg-4 col-md-12">
-                                
-                                            
-                                            
                                 <div class="thumbnail thumbnail2">
                                     <img class="w-100" src="assets/images/plusreal/plusreal.jpg" alt="Plus Real" />
                                 </div>
-
                             </div>
                             <div class="col-lg-6 col-md-12">
                                 <div class="about-inner inner">
                                     <div class="inner">
                                         <h3 class="project-quote">GET AMAZING REWARDS WHILE PLAYING AR GAMES.</h3>
                                         <p class="subtitle" style="color: #778797">Get an inmersive 3D experience by playing one of our amazing games. If you're good enough to get a coupon, please reach to us and get a nice surprice.</p>
+                                        <div class="portfolio-view-list d-flex flex-wrap mt--80"> 
+                                            <div class="port-view pl--20 pr--20 text-center">
+                                                <h4 class="mb--minus grey-color">
+                                                    <?php
+                                                        include '../vendor/autoload.php';
 
-                                        <div class="portfolio-view-list d-flex flex-wrap mt--80">
-                                            <div class="port-view pr--20 text-center"><h4 class="mb--minus grey-color">2017</h4><span class="app-info">RELEASED</span>
+                                                        use Goutte\Client;
+
+                                                        $client = new Client();
+                                                        $crawler = $client->request('GET', 'https://play.google.com/store/apps/details?id=com.AGM.AGM_Prototype');
+                                                        $cversion = $crawler->filter('div.IQ1z0d > span.htlgb')->eq(3);
+                                                        echo $cversion->text();
+                                                    ?>
+                                                </h4>
+                                                <!--<h4 class="mb--minus grey-color">1.9.2.1</h4>-->
+                                                <span class="app-info">CURRENT VERSION</span>
                                             </div>
-                                            <div class="port-view pl--20 pr--20 text-center"><h4 class="mb--minus grey-color">1.9.2.1</h4><span class="app-info">CURRENT VERSION</span>
+                                            <div class="port-view pl--20 pr--20 text-center">
+                                                <h4 class="mb--minus grey-color">
+                                                    <?php
+                                                        include '../vendor/autoload.php';
+
+                                                        //use Goutte\Client;
+
+                                                        $client = new Client();
+                                                        $crawler = $client->request('GET', 'https://play.google.com/store/apps/details?id=com.AGM.AGM_Prototype');
+                                                        $updatedate = $crawler->filter('div.IQ1z0d > span.htlgb')->eq(0);
+                                                        echo $updatedate->text();
+                                                    ?>
+                                                </h4>
+                                                <!--<h4 class="mb--minus grey-color">June 7, 2020</h4>-->
+                                                <span class="app-info">UPDATED</span>
                                             </div>
-                                            <div class="port-view pl--20 pr--20 text-center"><h4 class="mb--minus grey-color">June 7, 2020</h4><span class="app-info">UPDATED</span>
-                                            </div> 
-                                            <div class="port-view pl--20 pr--20 text-center"><h4 class="mb--minus grey-color counter count">100</h4><span class="app-info">INSTALLS</span>
+                                            <div class="port-view pl--20 pr--20 text-center">
+                                                <h4 class="mb--minus grey-color counter">
+                                                    <?php
+                                                        include '../vendor/autoload.php';
+
+                                                        //use Goutte\Client;
+
+                                                        $client = new Client();
+                                                        $crawler = $client->request('GET', 'https://play.google.com/store/apps/details?id=com.AGM.AGM_Prototype');
+                                                        $download = $crawler->filter('div.IQ1z0d > span.htlgb')->eq(2);
+                                                        echo $download->text();
+                                                    ?>
+                                                </h4>
+                                                <!--<h4 class="mb--minus grey-color counter count">100</h4>-->
+                                                <span class="app-info">INSTALLS</span>
                                             </div> 
                                         </div>
                                     </div>
@@ -429,7 +463,7 @@
                                             <li><a href="index.html">Home</a></li>
                                             <li><a href="about.html">About</a></li>
                                             <li><a class="disabled color-gray">Projects</a></li>
-                                            <li class="pl--30"><a href="plusreal.html">PlusReal</a></li>
+                                            <li class="pl--30"><a href="plusreal.php">PlusReal</a></li>
                                             <li><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </div>
