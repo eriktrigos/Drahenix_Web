@@ -14574,7 +14574,7 @@ ul.brand-style-2 {
 
 @media only screen and (max-width: 575px) {
   ul.brand-style-2 {
-    margin: 0 -15px;
+    margin: 0 15px;
   }
 }
 
@@ -14588,18 +14588,18 @@ ul.brand-style-2 li {
 
 @media only screen and (max-width: 767px) {
   ul.brand-style-2 li {
-    -webkit-flex-basis: 33.33%;
-        -ms-flex-preferred-size: 33.33%;
-            flex-basis: 33.33%;
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
     padding: 17px 10px;
   }
 }
 
 @media only screen and (max-width: 575px) {
   ul.brand-style-2 li {
-    -webkit-flex-basis: 33.33%;
-        -ms-flex-preferred-size: 33.33%;
-            flex-basis: 33.33%;
+    -webkit-flex-basis: 70%;
+        -ms-flex-preferred-size: 70%;
+            flex-basis: 70%;
     padding: 0 15px;
     margin-bottom: 16px;
   }
