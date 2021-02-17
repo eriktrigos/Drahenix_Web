@@ -462,12 +462,12 @@
                         <div class="footer-right" data-black-overlay="6">
                             <div class="row">
                                 <!-- Start Single Widget -->
-                                <div class="col-lg-5 col-sm-6 col-12">
+                                <div class="col-lg-4 col-sm-4 col-12">
                                     <div class="footer-widget">
                                         <h4>Quick Link</h4>
                                         <ul class="ft-link">
                                             <li><a href="es.html">Inicio</a></li>
-                                            <li><a href="acerca.html">Acerca</a></li>
+                                            <li><a href="acerca.html">Acerca de</a></li>
                                             <li><a class="disabled color-gray">Proyectos</a></li>
                                             <li class="pl--30"><a href="plusreal_es.php">PlusReal</a></li>
                                             <li><a href="contacto.html">Contacto</a></li>
@@ -476,7 +476,7 @@
                                 </div>
                                 <!-- End Single Widget  -->
                                 <!-- Start Single Widget -->
-                                <div class="col-lg-5 col-sm-6 col-12 mt_mobile--30">
+                                <div class="col-lg-4 col-sm-4 col-12 mt_mobile--30">
                                     <div class="footer-widget">
                                         <h4>Saluda</h4>
                                         <ul class="ft-link">
@@ -486,6 +486,14 @@
                                     </div>
                                 </div>
                                 <!-- End Single Widget  -->
+                                <div class="col-lg-4 col-sm-4 col-12 mt_mobile--30">
+                                    <div class="footer-widget">
+                                        <h4>Información Importante</h4>
+                                        <ul class="ft-link">
+                                            <li><a href="politica-de-privacidad.html">Política de Privacidad</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div class="copyright">
                                 <div class="col-lg-12">
